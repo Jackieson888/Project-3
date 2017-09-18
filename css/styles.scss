@@ -1,0 +1,147 @@
+body {
+    margin: auto 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+h1, h2, h3, h4, h5, p, textarea, button, label, em, input {
+    font-family: 'Merriweather', serif;
+}
+hr {
+    background-color: #212D47;
+    height: 2px;
+    width: 100%;
+    border:none;
+}
+header {
+    background-color: #212D47;
+    color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+header h1 {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    padding: 20px;
+}
+.sub-header h3 {
+    color: #212D47;
+    font-size:1.3em;
+    margin-bottom: 0;
+}
+.sub-header p {
+    color: #cecece;
+    margin-top: 0;
+    padding:10px;
+}
+.sub-header {
+    text-align: center;
+    border-bottom: thick solid #212D47;
+    margin: 0 15px 0 15px;
+}
+main {
+    margin: 0 15px 0 15px;
+}
+fieldset {
+    display:flex;
+    flex-wrap: wrap;
+    border:none;
+    padding:0;
+}
+legend { 
+    padding: 15px 0 15px 0;
+    font-size:1.3em;
+    font-weight:700;
+    color: #212D47;
+}
+.contact_info input, textarea, select {
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #cecece;
+    padding-left: 15px;
+    margin: 10px 0;
+}
+input[id="user_name"]:invalid, input[id="user_email"]:invalid {
+    content: string("Required");
+    background-color: #cecece !important;
+    background: url(../images/cross.svg);
+    background-repeat:no-repeat;
+    background-size:20px;
+    background-position: 95% 50%;
+}
+input[id="user_name"]:valid, input[id="user_email"]:valid {
+    background-color: #cecece !important;
+    background: url(../images/check.svg);
+    background-repeat:no-repeat;
+    background-size:20px;
+    background-position: 95% 50%;
+}
+input[type="email"], input[type="tel"], input[type="text"], textarea, select {
+    width: 95%;
+}
+input[name="zip"] {
+    width:90%;
+}
+textarea {
+    height: 70px;
+    resize: none;
+    margin-top: 15px;
+}
+input:focus, textarea:focus {
+    outline:none;
+    border: 2.5px solid #122348;
+}
+label {
+    color: #212D47;
+    font-size: 1em;
+    font-weight: lighter;
+}
+.copyright {
+    font-weight: lighter;
+    font-size: .75em;
+    align-self: center;
+    color: #cecece;
+}
+.newsletter div {
+    margin: 15px 0;
+}
+
+.sign_up {
+    border:none;
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    background-color: #4ca881;
+    color: #f2f2f2;
+    font-size: 1.25em;
+    font-weight:600;
+    margin: 30px 0px;
+}
+main {
+    margin-bottom: 75px;
+}
+@media (min-width:768px ) {
+    main, .sub-header {
+        margin: 0 25% 0 25%;
+    }
+    .contact_inputs label{
+        position: absolute;
+        left: 25%;
+        margin-top: 15px;
+    }
+    .contact_inputs input, .contact_inputs select {
+        position: absolute;
+        left: 45%;
+        width: 28%;
+        margin: 10px 0;
+   }
+    .contact_inputs br {
+        line-height:50px;
+    }
+    input[name="zip"] {
+    width:15%;
+}
+}
