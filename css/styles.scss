@@ -65,7 +65,6 @@ legend {
     margin: 10px 0;
 }
 input[id="user_name"]:invalid, input[id="user_email"]:invalid {
-    content: string("Required");
     background-color: #cecece !important;
     background: url(../images/cross.svg);
     background-repeat:no-repeat;
